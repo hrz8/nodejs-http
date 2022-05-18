@@ -21,7 +21,8 @@ routerBarang.post('/buat', (req, res) => {
   }
   barang.push(newBarang);
   res.status(200);
-  res.redirect('/barang/list');
+  // res.redirect('/barang/list');
+  res.render('barang/buatOK');
 });
 
 module.exports = routerBarang;
